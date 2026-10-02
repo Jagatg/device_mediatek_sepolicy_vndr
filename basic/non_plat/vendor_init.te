@@ -123,7 +123,6 @@ allow vendor_init procfs_blockio:file w_file_perms;
 # Purpose: Allow vendor_init to write /proc/driver/drop_caches , extra_free_kbytes , watermark_scale_factor
 allow vendor_init proc_extra_free_kbytes:file w_file_perms;
 allow vendor_init proc_drop_caches:file w_file_perms;
-allow vendor_init proc_watermark_scale_factor:file w_file_perms;
 set_prop(vendor_init, vendor_mtk_vm_prop)
 
 # Date 2021/05/10
@@ -152,7 +151,6 @@ set_prop(vendor_init, vendor_mtk_display_ro_prop)
 
 # Date : 2021/11/12
 # Purpose: add permission for /proc/sys/vm/watermark_boost_factor
-allow vendor_init proc_watermark_boost_factor:file w_file_perms;
 
 # Date: 2022/1/4
 # Purpose: add Neuropilot flag
